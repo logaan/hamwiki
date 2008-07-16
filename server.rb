@@ -4,7 +4,7 @@ require 'rubygems'
 require 'rack'
 require 'pp'
 
-class JSWiki
+class HamWiki
   def call env
     case env["PATH_INFO"]
       when "/"
@@ -27,4 +27,4 @@ class JSWiki
   end
 end
 
-Rack::Handler::WEBrick.run(Rack::Lint.new(JSWiki.new), :Port => 9292)
+Rack::Handler::WEBrick.run(Rack::Lint.new(HamWiki.new), :Port => 9292)
