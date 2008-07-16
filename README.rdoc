@@ -1,0 +1,27 @@
+== HAMwiki
+by Colin Campbell-McPherson (colin@logaan.net)
+
+https://github.com/logaan/hamwiki
+
+== DESCRIPTION:
+  
+200 lines of code, to manage all your documents in a microsecond, or your money back.
+
+== DOCUMENTATION
+
+You're looking at it.
+
+== USAGE
+* Run the server on your host (this can be your local box)
+* Point a browser at the host on port 9292
+* Click some links, read some text
+
+== CONTRIBUTE:
+
+Latest code is available at https://github.com/logaan/hamwiki
+
+The 'master' branch can be cloned with:
+
+  $ git clone git://github.com/logaan/hamwiki.git
+  
+Contact me via email or github and I'll merge in your work!
