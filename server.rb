@@ -2,16 +2,16 @@
 
 require 'rubygems'
 require 'rack'
+require 'pp'
 
 class JSWiki
-
-  def route path
-    case path
+  def call env
+    case env["PATH_INFO"]
       when "/"
         [200, {"Content-Type" => "text/html"},
           [File.read(File.join(File.dirname(__FILE__), "client.html"))]]
       else
-        document = File.join(File.dirname(__FILE__), "documents", path)
+        document = File.join(File.dirname(__FILE__), "documents", env["PATH_INFO"])
         
         if File.file?(document) && File.readable?(document)
           [200, {
@@ -25,12 +25,6 @@ class JSWiki
         end
     end
   end
-  
-  def call env
-    @request = Rack::Request.new(env)
-    route @request.path_info
-  end
-  
 end
 
 Rack::Handler::WEBrick.run(Rack::Lint.new(JSWiki.new), :Port => 9292)
