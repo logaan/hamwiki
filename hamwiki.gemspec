@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "HAMwiki"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.date = "2008-06-16"
   s.summary = "A super fast wiki comprised of a JS driven client and a purpose build rack server."
   s.email = "colin@logaan.net"

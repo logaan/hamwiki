@@ -11,6 +11,11 @@ https://github.com/logaan/hamwiki
 
 You're looking at it.
 
+== INSTALLATION
+
+If you have the github gem source simple run 'gem install logaan-hamwiki'. Or to build the gem
+yourself run 'rake package' from the root directory to build the gem.
+
 == USAGE
 * Run the server on your host (this can be your local box)
 * Point a browser at the host on port 9292
