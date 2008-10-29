@@ -18,6 +18,8 @@ class HamWiki
     end
   end
 
+ protected
+
   # If they're requesting a document we'll serve it if it's available, or give
   # a not found response
   def retrieve_document path_info
